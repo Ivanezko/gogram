@@ -5,11 +5,11 @@ package telegram
 import (
 	"github.com/pkg/errors"
 
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
+	"github.com/ivanezko/gogram/internal/encoding/tl"
 )
 
-//invokeAfterMsg#cb9f372d {X:Type} msg_id:long query:!X = X;
-//invokeAfterMsgs#3dc4b4f0 {X:Type} msg_ids:Vector<long> query:!X = X;
+// invokeAfterMsg#cb9f372d {X:Type} msg_id:long query:!X = X;
+// invokeAfterMsgs#3dc4b4f0 {X:Type} msg_ids:Vector<long> query:!X = X;
 
 type InitConnectionParams struct {
 	ApiID          int32             // Application identifier (see. App configuration)
@@ -62,8 +62,8 @@ func (m *Client) InvokeWithLayer(layer int, query tl.Object) (tl.Object, error) 
 	return data.(tl.Object), nil
 }
 
-//invokeWithoutUpdates#bf9459b7 {X:Type} query:!X = X;
-//invokeWithMessagesRange#365275f2 {X:Type} range:MessageRange query:!X = X;
+// invokeWithoutUpdates#bf9459b7 {X:Type} query:!X = X;
+// invokeWithMessagesRange#365275f2 {X:Type} range:MessageRange query:!X = X;
 
 type InvokeWithTakeoutParams struct {
 	TakeoutID int64

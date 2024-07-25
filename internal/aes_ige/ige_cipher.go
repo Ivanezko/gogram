@@ -7,7 +7,7 @@ import (
 	"crypto/cipher"
 	"crypto/sha256"
 
-	"github.com/amarnathcjd/gogram/internal/utils"
+	"github.com/ivanezko/gogram/internal/utils"
 	"github.com/pkg/errors"
 )
 

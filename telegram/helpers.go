@@ -13,8 +13,8 @@ import (
 	"strconv"
 	"strings"
 
-	ige "github.com/amarnathcjd/gogram/internal/aes_ige"
-	"github.com/amarnathcjd/gogram/internal/utils"
+	ige "github.com/ivanezko/gogram/internal/aes_ige"
+	"github.com/ivanezko/gogram/internal/utils"
 	"github.com/pkg/errors"
 )
 
@@ -662,7 +662,7 @@ func gatherVideoMetadata(path string, attrs []DocumentAttribute) ([]DocumentAttr
 		var (
 			performer string
 			title     string
-		//	waveform  []byte
+			//	waveform  []byte
 		)
 
 		cmd := exec.Command("ffprobe", "-v", "error", "-show_entries", "format_tags=artist,title", "-of", "json", path)
@@ -794,12 +794,12 @@ func (c *Client) gatherVideoThumb(path string, duration int64) (InputFile, error
 func getAttrs(mimeType string) []DocumentAttribute {
 	switch mimeType {
 	case "image/gif":
-		//return []DocumentAttribute{&DocumentAttributeAnimated{}}
+		// return []DocumentAttribute{&DocumentAttributeAnimated{}}
 	case "video/mp4", "video/webm", "video/mpeg", "video/matroska", "video/3gpp", "video/3gpp2", "video/x-matroska", "video/quicktime", "video/x-msvideo", "video/x-ms-wmv", "video/x-m4v", "video/x-flv":
-		//attrVid := &DocumentAttributeVideo{RoundMessage: false, SupportsStreaming: true, W: 512, H: 512, Duration: 0}
-		//return []DocumentAttribute{attrVid}
+		// attrVid := &DocumentAttributeVideo{RoundMessage: false, SupportsStreaming: true, W: 512, H: 512, Duration: 0}
+		// return []DocumentAttribute{attrVid}
 	case "audio/mpeg", "audio/ogg", "audio/x-wav", "audio/x-flac", "audio/x-m4a", "audio/3gpp", "audio/3gpp2", "audio/amr", "audio/amr-wb", "audio/AMR-WB+", "audio/mp4", "audio/x-matroska":
-		//return []DocumentAttribute{&DocumentAttributeAudio{Voice: false}}
+		// return []DocumentAttribute{&DocumentAttributeAudio{Voice: false}}
 	default:
 		return []DocumentAttribute{}
 	}

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/amarnathcjd/gogram/internal/mtproto/objects"
+	"github.com/ivanezko/gogram/internal/mtproto/objects"
 )
 
 type ErrResponseCode struct {
@@ -714,7 +714,7 @@ var errorMessages = map[string]string{
 
 	// next errors was found, but they're too strange and looks like misspelling
 	// "FILE_REFERENCE_*":                  "The file reference expired, it must be refreshed",
-	//! pony floodwait https://core.telegram.org/method/messages.forwardMessages
+	// ! pony floodwait https://core.telegram.org/method/messages.forwardMessages
 	// "P0NY_FLOODWAIT":                    " ", //! No any description provided
 	// "INPUT_METHOD_INVALID_1192227_X":    "Invalid method",
 	// "INPUT_METHOD_INVALID_1400137063_X": "Invalid method",

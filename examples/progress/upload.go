@@ -1,10 +1,10 @@
 package examples
 
 // Youtube DL Bot Example;
-// https://gist.github.com/AmarnathCJD/bfceefe9efd1a079ab151da54ef3bba2
+// https://gist.github.com/ivanezko/bfceefe9efd1a079ab151da54ef3bba2
 
 import (
-	"github.com/amarnathcjd/gogram/telegram"
+	"github.com/ivanezko/gogram/telegram"
 )
 
 const (

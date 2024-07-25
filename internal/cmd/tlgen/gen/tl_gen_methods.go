@@ -10,7 +10,7 @@ import (
 
 	"github.com/dave/jennifer/jen"
 
-	"github.com/amarnathcjd/gogram/internal/cmd/tlgen/tlparser"
+	"github.com/ivanezko/gogram/internal/cmd/tlgen/tlparser"
 )
 
 var maximumPositionalArguments = 5
@@ -87,7 +87,7 @@ func (g *Generator) generateComment(name, _type string) string {
 	ack = strings.Split(ack, "<div id=\"dev_page_content\">")[1]
 	ack = strings.Split(ack, "</p>")[0]
 	ack = strings.ReplaceAll(ack, "<p>", "")
-	//ack = strings.ReplaceAll(ack, "see .", "")
+	// ack = strings.ReplaceAll(ack, "see .", "")
 	a_tag_regex := regexp.MustCompile(`<a href="([^"]*)">([^<]*)</a>`)
 	ack = a_tag_regex.ReplaceAllString(ack, "[$2](https://core.telegram.org$1)")
 

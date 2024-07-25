@@ -1,4 +1,4 @@
-// Copyright (c) 2024, amarnathcjd
+// Copyright (c) 2024, ivanezko
 
 package telegram
 

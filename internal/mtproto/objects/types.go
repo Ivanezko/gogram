@@ -10,8 +10,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
-	"github.com/amarnathcjd/gogram/internal/mtproto/messages"
+	"github.com/ivanezko/gogram/internal/encoding/tl"
+	"github.com/ivanezko/gogram/internal/mtproto/messages"
 )
 
 // TYPES
@@ -151,7 +151,7 @@ func (*RpcResult) CRC() uint32 {
 }
 
 // DecodeFromButItsVector
-//func (t *RpcResult) DecodeFromButItsVector(d *Decoder, as reflect.Type) {
+// func (t *RpcResult) DecodeFromButItsVector(d *Decoder, as reflect.Type) {
 //	t.ReqMsgID = d.PopLong()
 //	crc := binary.LittleEndian.Uint32(d.GetRestOfMessage()[:WordLen])
 //	if crc == CrcGzipPacked {
@@ -163,7 +163,7 @@ func (*RpcResult) CRC() uint32 {
 //		vector := d.PopVector(as)
 //		t.Obj = &InnerVectorObject{I: vector}
 //	}
-//}
+// }
 
 type RpcError struct {
 	ErrorCode    int32

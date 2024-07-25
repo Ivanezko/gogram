@@ -1,11 +1,11 @@
 package examples
 
-//#cgo LDFLAGS: -L . -lntgcalls -Wl,-rpath=./
+// #cgo LDFLAGS: -L . -lntgcalls -Wl,-rpath=./
 import "C"
 import (
 	"fmt"
 
-	"github.com/amarnathcjd/gogram/telegram"
+	"github.com/ivanezko/gogram/telegram"
 )
 
 func main() {

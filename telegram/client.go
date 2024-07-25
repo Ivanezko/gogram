@@ -15,12 +15,12 @@ import (
 	"syscall"
 	"time"
 
-	mtproto "github.com/amarnathcjd/gogram"
+	mtproto "github.com/ivanezko/gogram"
 	"github.com/pkg/errors"
 
-	"github.com/amarnathcjd/gogram/internal/keys"
-	"github.com/amarnathcjd/gogram/internal/session"
-	"github.com/amarnathcjd/gogram/internal/utils"
+	"github.com/ivanezko/gogram/internal/keys"
+	"github.com/ivanezko/gogram/internal/session"
+	"github.com/ivanezko/gogram/internal/utils"
 )
 
 const (

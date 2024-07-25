@@ -10,9 +10,9 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	ige "github.com/amarnathcjd/gogram/internal/aes_ige"
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
-	"github.com/amarnathcjd/gogram/internal/utils"
+	ige "github.com/ivanezko/gogram/internal/aes_ige"
+	"github.com/ivanezko/gogram/internal/encoding/tl"
+	"github.com/ivanezko/gogram/internal/utils"
 	"github.com/pkg/errors"
 )
 
@@ -166,7 +166,7 @@ func (msg *Unencrypted) GetSeqNo() int {
 	return 0
 }
 
-//------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 // MessageInformator
 //

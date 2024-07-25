@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/amarnathcjd/gogram/internal/utils"
+	"github.com/ivanezko/gogram/internal/utils"
 )
 
 type CACHE struct {

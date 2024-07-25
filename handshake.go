@@ -9,12 +9,12 @@ import (
 	"fmt"
 	"math/big"
 
-	ige "github.com/amarnathcjd/gogram/internal/aes_ige"
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
-	"github.com/amarnathcjd/gogram/internal/keys"
-	"github.com/amarnathcjd/gogram/internal/math"
-	"github.com/amarnathcjd/gogram/internal/mtproto/objects"
-	"github.com/amarnathcjd/gogram/internal/utils"
+	ige "github.com/ivanezko/gogram/internal/aes_ige"
+	"github.com/ivanezko/gogram/internal/encoding/tl"
+	"github.com/ivanezko/gogram/internal/keys"
+	"github.com/ivanezko/gogram/internal/math"
+	"github.com/ivanezko/gogram/internal/mtproto/objects"
+	"github.com/ivanezko/gogram/internal/utils"
 	"github.com/pkg/errors"
 )
 

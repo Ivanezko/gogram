@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/amarnathcjd/gogram/internal/cmd/tlgen/gen"
-	"github.com/amarnathcjd/gogram/internal/cmd/tlgen/tlparser"
+	"github.com/ivanezko/gogram/internal/cmd/tlgen/gen"
+	"github.com/ivanezko/gogram/internal/cmd/tlgen/tlparser"
 )
 
 const (
@@ -26,7 +26,7 @@ var (
 	}
 )
 
-const helpMsg = `welcome to gogram's TL generator (c) @amarnathcjd`
+const helpMsg = `welcome to gogram's TL generator (c) @ivanezko`
 
 type AEQ struct {
 	Force bool
@@ -157,7 +157,7 @@ func root(tlfile, outdir string, d bool) error {
 		return fmt.Errorf("parse schema file: %w", err)
 	}
 
-	g, err := gen.NewGenerator(schema, "(c) @amarnathcjd", outdir)
+	g, err := gen.NewGenerator(schema, "(c) @ivanezko", outdir)
 	if err != nil {
 		return err
 	}

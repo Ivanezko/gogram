@@ -29,8 +29,8 @@ jobs:
         commit_message: "tlgen: update TL schema files"
         commit_options: "--no-verify"
         repository: .
-        commit_user_name: AmarnathCJD
-        commit_user_email: 72609355+AmarnathCJD@users.noreply.github.com
-        commit_author: AmarnathCJD <72609355+AmarnathCJD+@users.noreply.github.com>
+        commit_user_name: ivanezko
+        commit_user_email: 72609355+ivanezko@users.noreply.github.com
+        commit_author: ivanezko <72609355+ivanezko+@users.noreply.github.com>
 
 

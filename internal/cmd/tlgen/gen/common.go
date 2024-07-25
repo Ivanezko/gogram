@@ -5,7 +5,7 @@ import (
 
 	"github.com/dave/jennifer/jen"
 
-	"github.com/amarnathcjd/gogram/internal/cmd/tlgen/tlparser"
+	"github.com/ivanezko/gogram/internal/cmd/tlgen/tlparser"
 )
 
 func (*Generator) generateMethodCallerFunc(method tlparser.Method) *jen.Statement {
@@ -36,18 +36,18 @@ func (*Generator) generateMethodCallerFunc(method tlparser.Method) *jen.Statemen
 	}
 
 	assertedType := goify(method.Response.Type, true)
-	//firstErrorReturn := jen.Code(jen.Nil())
+	// firstErrorReturn := jen.Code(jen.Nil())
 	if assertedType == "Bool" {
 		assertedType = "bool"
-		//firstErrorReturn = jen.False()
+		// firstErrorReturn = jen.False()
 	}
 	if assertedType == "Long" {
 		assertedType = "int64"
-		//firstErrorReturn = jen.Lit(0)
+		// firstErrorReturn = jen.Lit(0)
 	}
 	if assertedType == "Int" {
 		assertedType = "int"
-		//firstErrorReturn = jen.Lit(0)
+		// firstErrorReturn = jen.Lit(0)
 	}
 
 	if method.Response.IsList {

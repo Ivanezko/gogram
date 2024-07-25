@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/amarnathcjd/gogram">
+    <a href="https://github.com/ivanezko/gogram">
         <img src="https://i.imgur.com/RE1M0sM.png" alt="Gogram" width="256">
     </a>
     <br>
@@ -14,7 +14,7 @@
         DOCS
     </a>
     •
-    <a href="https://github.com/amarnathcjd/gogram/releases">
+    <a href="https://github.com/ivanezko/gogram/releases">
         RELEASES
     </a>
     •
@@ -30,13 +30,13 @@
 
 ## Status
 
-[![GoDoc](https://godoc.org/github.com/amarnathcjd/gogram?status.svg)](https://godoc.org/github.com/amarnathcjd/gogram)
-[![Go Report Card](https://goreportcard.com/badge/github.com/amarnathcjd/gogram)](https://goreportcard.com/report/github.com/amarnathcjd/gogram)
-[![License](https://img.shields.io/github/license/amarnathcjd/gogram.svg)](https://img.shields.io/github/license/amarnathcjd/gogram.svg)
-[![GitHub stars](https://img.shields.io/github/stars/amarnathcjd/gogram.svg?style=social&label=Stars)](https://img.shields.io/github/license/amarnathcjd/gogram.svg?style=social&label=Stars)
-[![GitHub forks](https://img.shields.io/github/forks/amarnathcjd/gogram.svg?style=social&label=Fork)](https://img.shields.io/github/license/amarnathcjd/gogram.svg?style=social&label=Fork)
-[![GitHub issues](https://img.shields.io/github/issues/amarnathcjd/gogram.svg)](https://img.shields.io/github/license/amarnathcjd/gogram.svg)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/amarnathcjd/gogram.svg)](https://img.shields.io/github/license/amarnathcjd/gogram.svg)
+[![GoDoc](https://godoc.org/github.com/ivanezko/gogram?status.svg)](https://godoc.org/github.com/ivanezko/gogram)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ivanezko/gogram)](https://goreportcard.com/report/github.com/ivanezko/gogram)
+[![License](https://img.shields.io/github/license/ivanezko/gogram.svg)](https://img.shields.io/github/license/ivanezko/gogram.svg)
+[![GitHub stars](https://img.shields.io/github/stars/ivanezko/gogram.svg?style=social&label=Stars)](https://img.shields.io/github/license/ivanezko/gogram.svg?style=social&label=Stars)
+[![GitHub forks](https://img.shields.io/github/forks/ivanezko/gogram.svg?style=social&label=Fork)](https://img.shields.io/github/license/ivanezko/gogram.svg?style=social&label=Fork)
+[![GitHub issues](https://img.shields.io/github/issues/ivanezko/gogram.svg)](https://img.shields.io/github/license/ivanezko/gogram.svg)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/ivanezko/gogram.svg)](https://img.shields.io/github/license/ivanezko/gogram.svg)
 
 <p>⭐️ <b>Gogram</b> is a modern, elegant and concurrent <b><a href='https://core.telegram.org/api'>MTProto API</a></b>
 framework. It enables you to easily interact with the main Telegram API through a user account (custom client) or a bot
@@ -47,7 +47,7 @@ identity (bot API alternative) using Go.</p>
 <p>Please note that Gogram requires Go <b>1.18</b> or later.</p>
 
 ```bash
-go get -u github.com/amarnathcjd/gogram/telegram
+go get -u github.com/ivanezko/gogram/telegram
 ```
 
 ## Getting Started
@@ -55,7 +55,7 @@ go get -u github.com/amarnathcjd/gogram/telegram
 ```golang
 package main
 
-import "github.com/amarnathcjd/gogram/telegram"
+import "github.com/ivanezko/gogram/telegram"
 
 func main() {
 	client, err := telegram.NewClient(telegram.ClientConfig{
@@ -83,7 +83,7 @@ func main() {
 
 If you'd like to support Gogram, you can consider:
 
-- [Become a GitHub sponsor](https://github.com/sponsors/amarnathcjd).
+- [Become a GitHub sponsor](https://github.com/sponsors/ivanezko).
 
 ## Key Features
 

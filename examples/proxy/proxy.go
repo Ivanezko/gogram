@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/amarnathcjd/gogram/telegram"
+	"github.com/ivanezko/gogram/telegram"
 )
 
 // supported proxy types

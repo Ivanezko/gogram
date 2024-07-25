@@ -19,13 +19,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
-	"github.com/amarnathcjd/gogram/internal/mode"
-	"github.com/amarnathcjd/gogram/internal/mtproto/messages"
-	"github.com/amarnathcjd/gogram/internal/mtproto/objects"
-	"github.com/amarnathcjd/gogram/internal/session"
-	"github.com/amarnathcjd/gogram/internal/transport"
-	"github.com/amarnathcjd/gogram/internal/utils"
+	"github.com/ivanezko/gogram/internal/encoding/tl"
+	"github.com/ivanezko/gogram/internal/mode"
+	"github.com/ivanezko/gogram/internal/mtproto/messages"
+	"github.com/ivanezko/gogram/internal/mtproto/objects"
+	"github.com/ivanezko/gogram/internal/session"
+	"github.com/ivanezko/gogram/internal/transport"
+	"github.com/ivanezko/gogram/internal/utils"
 	"github.com/pkg/errors"
 )
 
@@ -138,7 +138,7 @@ func NewMTProto(c Config) (*MTProto, error) {
 		return nil, errors.Wrap(err, "loading auth")
 	}
 
-	//mtproto.offsetTime()
+	// mtproto.offsetTime()
 	go mtproto.checkBreaking()
 
 	return mtproto, nil
@@ -432,7 +432,7 @@ func (m *MTProto) Reconnect(WithLogs bool) error {
 		PingID: 123456789,
 	})
 
-	//m.MakeRequest(&utils.UpdatesGetStateParams{}) // to ask the server to send the updates
+	// m.MakeRequest(&utils.UpdatesGetStateParams{}) // to ask the server to send the updates
 	return errors.Wrap(err, "recreating connection")
 }
 
@@ -616,7 +616,7 @@ messageTypeSwitching:
 		respChannelsBackup = m.responseChannels
 
 		m.responseChannels = utils.NewSyncIntObjectChan()
-		//m.Reconnect(false)
+		// m.Reconnect(false)
 
 		sendToChannelWithTimeout := func(ch chan tl.Object, data tl.Object) {
 			timeout := time.After(1 * time.Millisecond)
